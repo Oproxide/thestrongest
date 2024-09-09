@@ -1,0 +1,110 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 11 | SCRIPTS: 1 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.x3xuufhufh \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[x3xuufhufh]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.x3xuufhufh.iyhlydsul \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["Size"] = UDim2.new(0, 452, 0, 272)
+UI["2"]["Position"] = UDim2.new(0.12315, 0, 0.15301, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Name"] = [[iyhlydsul]]
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.name \\ --
+UI["3"] = Instance.new("TextLabel", UI["2"])
+UI["3"]["BorderSizePixel"] = 0
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3"]["TextSize"] = 24
+UI["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Size"] = UDim2.new(0, 452, 0, 50)
+UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Text"] = [[Controls for addons (vector scripts sigma skibidi)]]
+UI["3"]["Name"] = [[name]]
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.name.UIStroke \\ --
+UI["4"] = Instance.new("UIStroke", UI["3"])
+UI["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["4"]["Color"] = Color3.fromRGB(255, 0, 5)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.TextLabel \\ --
+UI["5"] = Instance.new("TextLabel", UI["2"])
+UI["5"]["TextWrapped"] = true
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["5"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextSize"] = 24
+UI["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Size"] = UDim2.new(0, 452, 0, 158)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Text"] = [[Admin dashies: Rightclick+w or a or s or d|| to anime dash                                                                                                       kill select(alpha): press E on any player to select them, You will know when you select them because the player will turn full purple, press 1,2,3 ,4 or click to attack that player HERO HUNTER ONLY!!!ONLY PC!]]
+UI["5"]["Position"] = UDim2.new(0, 0, 0.21324, 0)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.TextLabel.UIStroke \\ --
+UI["6"] = Instance.new("UIStroke", UI["5"])
+UI["6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["6"]["Color"] = Color3.fromRGB(255, 0, 5)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.igetit \\ --
+UI["7"] = Instance.new("TextButton", UI["2"])
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["TextSize"] = 35
+UI["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39)
+UI["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["7"]["Name"] = [[igetit]]
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["Text"] = [[I understand]]
+UI["7"]["Position"] = UDim2.new(0, 0, 0.81618, 0)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.igetit.UIStroke \\ --
+UI["8"] = Instance.new("UIStroke", UI["7"])
+UI["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["8"]["Color"] = Color3.fromRGB(255, 0, 5)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.idumb \\ --
+UI["9"] = Instance.new("TextButton", UI["2"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["TextSize"] = 35
+UI["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(0, 154, 255)
+UI["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["9"]["Name"] = [[idumb]]
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["Text"] = [[Why is the gui so trash]]
+UI["9"]["Position"] = UDim2.new(0.55752, 0, 0.81618, 0)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.idumb.UIStroke \\ --
+UI["a"] = Instance.new("UIStroke", UI["9"])
+UI["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["a"]["Color"] = Color3.fromRGB(255, 0, 5)
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.LocalScript \\ --
+UI["b"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.x3xuufhufh.iyhlydsul.LocalScript \\ --
+local function SCRIPT_b()
+local script = UI["b"]
+	script.Parent.igetit.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+	script.Parent.idumb.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+task.spawn(SCRIPT_b)
+
+return UI["1"], require;
