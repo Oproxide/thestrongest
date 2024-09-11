@@ -1,0 +1,121 @@
+-- wth are u doing here?
+
+local xLZXSTRGui = Instance.new ("ScreenGui",game.CoreGui)
+
+xLZXSTRGui.ResetOnSpawn = false
+
+local xFrame = Instance.new ("Frame",xLZXSTRGui)
+
+local xData = {
+	Black = Color3.new (0,0,0),
+	White = Color3.new (1,1,1),
+	Icon = "rbxassetid://217811566"
+}
+
+
+	-- Properties XFrame
+xFrame.Size = UDim2.new (0.1,200,0.1,100)
+xFrame.Position = UDim2.new (.25,0,0.25,0)
+xFrame.BackgroundTransparency = 0.2
+
+
+local xSendMessageButton = Instance.new ("TextButton",xFrame)
+
+
+	-- Properties xSendMessageButton
+xSendMessageButton.Size = UDim2.new (0.3,0,0.15,0)
+xSendMessageButton.Position = UDim2.new (0.68,0,0.4,0)
+xSendMessageButton.BackgroundTransparency = 0.75
+
+local xTitle = Instance.new ("TextLabel",xFrame)
+
+
+	-- Properties xTitle
+xTitle.Size = UDim2.new (1,0,0.1,0)
+xTitle.BackgroundTransparency = 0.75
+
+local xTextBox = Instance.new ("TextBox",xFrame)
+
+
+	-- Properties xTextBox
+xTextBox.Size = UDim2.new (0.6,0,.15)
+xTextBox.Position = UDim2.new (0.03,0,0.4)
+xTextBox.BackgroundTransparency = 0.75
+
+local xBottomTitle = Instance.new ("TextLabel",xFrame)
+
+xBottomTitle.Size = UDim2.new (1,0,0.1,0)
+xBottomTitle.Position = UDim2.new(0,0,0.9,0)
+xBottomTitle.BackgroundTransparency = 0.75
+
+
+	-- Set Colors
+
+xFrame.BackgroundColor3 = xData.Black
+xSendMessageButton.BackgroundColor3 = xData.Black
+xTextBox.BackgroundColor3 = xData.Black
+xBottomTitle.BackgroundColor3 = xData.Black
+xTitle.BackgroundColor3 = xData.Black
+
+xBottomTitle.TextColor3 = xData.White
+xTextBox.TextColor3 = xData.White
+xSendMessageButton.TextColor3 = xData.White
+xTitle.TextColor3 = xData.White
+
+	-- Set Text
+
+xTitle.Text = "Roblox Chat Troll"
+xBottomTitle.Text = "Made by lzxstr! Check out on youtube!"
+xTextBox.PlaceholderText = "Message"
+xSendMessageButton.Text = "Send"
+xTextBox.Text = "Message"
+
+	-- Random shit to make it draggable lol
+
+xFrame.Draggable = true
+xFrame.Active = true
+
+local XUICorner = Instance.new ("UICorner")
+
+	-- Fast Change Propreties
+
+for i,v in pairs (xFrame:GetChildren()) do
+	if v:IsA ("TextLabel") or v:IsA ("TextBox") or v:IsA ("TextButton") then
+		XUICorner:Clone().Parent = v
+		v.Font = "Ubuntu"
+		v.TextScaled = true
+	end
+end
+
+	-- Some extra Random Shit
+
+
+XUICorner.Parent = xFrame
+
+local xYoutubeIcon = Instance.new ("ImageLabel",xBottomTitle)
+
+xYoutubeIcon.Size = UDim2.new (0.06,0,1,0)
+xYoutubeIcon.Position = UDim2.new (0.92,0,0,0)
+xYoutubeIcon.Image = xData.Icon
+xYoutubeIcon.BackgroundTransparency = 1
+
+xLZXSTRGui.Name = "lzxstr"
+xFrame.Name = "Menu"
+xTextBox.Name = "Messagebox"
+xBottomTitle.Name = "Bottom"
+xTitle.Name = "Title"
+xYoutubeIcon.Name = "Icon"
+xSendMessageButton.Name = "Send"
+
+
+
+	-- The Code
+
+
+game.Chat.BubbleChatEnabled = false -- just no
+
+xSendMessageButton.MouseButton1Click:Connect (function()
+	local Text = xTextBox.Text
+	
+	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("                                                                                                                                              [ROBLOX]: "..Text, "All") 
+end)
