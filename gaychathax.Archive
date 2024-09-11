@@ -65,7 +65,7 @@ xTitle.TextColor3 = xData.White
 	-- Set Text
 
 xTitle.Text = "Roblox Chat Troll"
-xBottomTitle.Text = "Made by lzxstr! Check out on youtube!"
+xBottomTitle.Text = "ARCHIVE Made by lzxstr ARCHIVE"
 xTextBox.PlaceholderText = "Message"
 xSendMessageButton.Text = "Send"
 xTextBox.Text = "Message"
